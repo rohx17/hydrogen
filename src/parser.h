@@ -61,13 +61,13 @@ class Parser {
 
     private:
     //Telling compiler return value is important, and if caller ignores the return value then throw a warning
-    [[nodiscard]] inline std::optional<Token> peek(int ahead = 1) const
+    [[nodiscard]] inline std::optional<Token> peek(int offset = 0) const
     {
-        if(m_index + ahead > m_tokens.size()) {
+        if(m_index + offset >= m_tokens.size()) {
             return {};
         }
         else {
-            return m_tokens.at(m_index);//.at() coz bound striking not undefined behavior
+            return m_tokens.at(m_index+offset);//.at() coz bound striking not undefined behavior
         }
     }
 
