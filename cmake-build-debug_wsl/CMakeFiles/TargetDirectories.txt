@@ -1,0 +1,3 @@
+/home/ro/dev/hydrogran_03/cmake-build-debug_wsl/CMakeFiles/hydro.dir
+/home/ro/dev/hydrogran_03/cmake-build-debug_wsl/CMakeFiles/edit_cache.dir
+/home/ro/dev/hydrogran_03/cmake-build-debug_wsl/CMakeFiles/rebuild_cache.dir
