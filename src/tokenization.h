@@ -15,7 +15,8 @@ enum class TokenType{
     close_paren,
     ident,
     let,
-    eq
+    eq,
+    plus
  };
 
 //forming a structure with the type of token and the string value of it
@@ -87,6 +88,12 @@ class Tokenizer {
             else if(peek().value()=='=') {
                 consume();
                 tokens.push_back({.type=TokenType::eq});
+                continue;
+            }
+
+            else if(peek().value()=='+') {
+                consume();
+                tokens.push_back({.type=TokenType::plus});
                 continue;
             }
 

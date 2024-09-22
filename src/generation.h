@@ -10,29 +10,45 @@ public:
     inline explicit Generator(NodeProg prog): m_prog(std::move(prog)) {
 
     }
-
-    void gen_expr(const NodeExpr* expr)  {
-        struct ExprVisitor {
-
+    void gen_term(const NodeTerm* term) {
+        struct TermVisitor {
             Generator* gen;
-
-            void operator()(const NodeExprIntLit* expr_int_lit) const{
-                gen->m_output << "    mov rax, "<< expr_int_lit->int_lit.value.value() << "\n";
+            void operator()(const NodeTermIntLit* term_int_lit) const {
+                gen->m_output << "    mov rax, "<< term_int_lit->int_lit.value.value() << "\n";
                 gen->push("rax");
             }
-            void operator()(const NodeExprIdent* expr_ident) const{
-                if (!gen->m_vars.contains(expr_ident->ident.value.value())) {
-                    std::cerr << "ERROR: Unknown identifier " << expr_ident->ident.value.value() << "\n";
+            void operator()(const NodeTermIdent* term_ident) const {
+                if (!gen->m_vars.contains(term_ident->ident.value.value())) {
+                    std::cerr << "ERROR: Unknown identifier " << term_ident->ident.value.value() << "\n";
                     exit(EXIT_FAILURE);
                 }
-                const auto& var = gen->m_vars.at(expr_ident->ident.value.value());
+                const auto& var = gen->m_vars.at(term_ident->ident.value.value());
                 std::stringstream offset;
                 std::cout<<gen->m_stack_size<<"-"<<var.stack_loc<<std::endl;
                 offset<<"QWORD [rsp + " << (gen->m_stack_size - var.stack_loc-1)*8<< "]\n";
                 gen->push(offset.str());
             }
+        };
+        TermVisitor visitor({.gen=this});
+        std::visit(visitor,term->var);
+
+    }
+    void gen_expr(const NodeExpr* expr)  {
+        struct ExprVisitor {
+
+            Generator* gen;
+
+            void operator()(const NodeTerm* term) const{
+
+                gen->gen_term(term);
+            }
             void operator()(const NodeBinExpr* bin_expr) const {
-                assert(false);
+                gen->gen_expr(bin_expr->add->lhs);
+                gen->gen_expr(bin_expr->add->rhs);
+                gen->pop("rax");
+                gen->pop("rbx");
+                gen->m_output<<"    add rax, rbx\n";
+                gen->push("rax");
             }
         };
 

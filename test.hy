@@ -1,7 +1,3 @@
-let x = 1;
+let x = 1+2+3+5+6+7+8+10;
 let y = x;
-let z = y;
-let a = z;
-let b = a;
-let c = b;
-exit(c);
+exit(y);
