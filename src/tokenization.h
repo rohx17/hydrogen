@@ -10,7 +10,12 @@
 enum class TokenType{
     exit,
     int_lit,
-    semi
+    semi,
+    open_paren,
+    close_paren,
+    ident,
+    let,
+    eq
  };
 
 //forming a structure with the type of token and the string value of it
@@ -45,10 +50,17 @@ class Tokenizer {
                     buf.clear();
                     continue;
                 }
-                else {
-                    std::cerr <<"You messed up!"<<std::endl;
-                    exit(EXIT_FAILURE);
+                else if(buf=="let") {
+                    tokens.push_back({.type=TokenType::let});
+                    buf.clear();
+                    continue;
                 }
+                else {
+                    tokens.push_back({.type=TokenType::ident,.value=buf});
+                    buf.clear();
+                    continue;
+                }
+
             }
 
             else if(std::isdigit(peek().value())) {
@@ -60,6 +72,21 @@ class Tokenizer {
 
                 tokens.push_back({.type=TokenType::int_lit,.value=buf});
                 buf.clear();
+                continue;
+            }
+            else if (peek().value()=='(') {
+                consume();
+                tokens.push_back({.type=TokenType::open_paren});
+            }
+
+            else if (peek().value()==')') {
+                consume();
+                tokens.push_back({.type=TokenType::close_paren});
+            }
+
+            else if(peek().value()=='=') {
+                consume();
+                tokens.push_back({.type=TokenType::eq});
                 continue;
             }
 

@@ -502,72 +502,19 @@ events:
       Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
       g++.exe: fatal error: no input files
       compilation terminated.
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-63pz7k"
-      binary: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-63pz7k"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-63pz7k'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ed234
-        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ed234.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
-        FAILED: CMakeFiles/cmTC_ed234.dir/CMakeCCompilerABI.c.obj 
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ed234.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
-        Assembler messages:\x0d
-        Fatal error: can't create CMakeFiles\\cmTC_ed234.dir\\CMakeCCompilerABI.c.obj: Invalid argument\x0d
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt:3 (project)"
-    checks:
-      - "Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/gcc.exe"
-    directories:
-      source: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-v8scms"
-      binary: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-v8scms"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-v8scms'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_a884c
-        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a884c.dir\\testCCompiler.c.obj -c \\\\wsl.localhost\\ubuntu\\home\\ro\\dev\\hydrogran_03\\cmake-build-relwithdebinfo_wsl\\CMakeFiles\\CMakeScratch\\TryCompile-v8scms\\testCCompiler.c
-        FAILED: CMakeFiles/cmTC_a884c.dir/testCCompiler.c.obj 
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a884c.dir\\testCCompiler.c.obj -c \\\\wsl.localhost\\ubuntu\\home\\ro\\dev\\hydrogran_03\\cmake-build-relwithdebinfo_wsl\\CMakeFiles\\CMakeScratch\\TryCompile-v8scms\\testCCompiler.c
-        Assembler messages:\x0d
-        Fatal error: can't create CMakeFiles\\cmTC_a884c.dir\\testCCompiler.c.obj: Invalid argument\x0d
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 1
-...
 
 ---
 events:
   -
     kind: "message-v1"
     backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
       - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
@@ -1068,8 +1015,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-ckc0mm"
-      binary: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-ckc0mm"
+      source: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-m34jwi"
+      binary: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-m34jwi"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: ""
@@ -1078,14 +1025,14 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-ckc0mm'
+        Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-m34jwi'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ad977
-        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ad977.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
-        FAILED: CMakeFiles/cmTC_ad977.dir/CMakeCCompilerABI.c.obj 
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ad977.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c2a41
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c2a41.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        FAILED: CMakeFiles/cmTC_c2a41.dir/CMakeCCompilerABI.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c2a41.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
         Assembler messages:\x0d
-        Fatal error: can't create CMakeFiles\\cmTC_ad977.dir\\CMakeCCompilerABI.c.obj: Invalid argument\x0d
+        Fatal error: can't create CMakeFiles\\cmTC_c2a41.dir\\CMakeCCompilerABI.c.obj: Invalid argument\x0d
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -1097,8 +1044,8 @@ events:
     checks:
       - "Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/gcc.exe"
     directories:
-      source: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-zo5znn"
-      binary: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-zo5znn"
+      source: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-99by20"
+      binary: "//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-99by20"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: ""
@@ -1107,14 +1054,14 @@ events:
       variable: "CMAKE_C_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-zo5znn'
+        Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-99by20'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c8612
-        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c8612.dir\\testCCompiler.c.obj -c \\\\wsl.localhost\\ubuntu\\home\\ro\\dev\\hydrogran_03\\cmake-build-relwithdebinfo_wsl\\CMakeFiles\\CMakeScratch\\TryCompile-zo5znn\\testCCompiler.c
-        FAILED: CMakeFiles/cmTC_c8612.dir/testCCompiler.c.obj 
-        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c8612.dir\\testCCompiler.c.obj -c \\\\wsl.localhost\\ubuntu\\home\\ro\\dev\\hydrogran_03\\cmake-build-relwithdebinfo_wsl\\CMakeFiles\\CMakeScratch\\TryCompile-zo5znn\\testCCompiler.c
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_41488
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_41488.dir\\testCCompiler.c.obj -c \\\\wsl.localhost\\ubuntu\\home\\ro\\dev\\hydrogran_03\\cmake-build-relwithdebinfo_wsl\\CMakeFiles\\CMakeScratch\\TryCompile-99by20\\testCCompiler.c
+        FAILED: CMakeFiles/cmTC_41488.dir/testCCompiler.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles\\cmTC_41488.dir\\testCCompiler.c.obj -c \\\\wsl.localhost\\ubuntu\\home\\ro\\dev\\hydrogran_03\\cmake-build-relwithdebinfo_wsl\\CMakeFiles\\CMakeScratch\\TryCompile-99by20\\testCCompiler.c
         Assembler messages:\x0d
-        Fatal error: can't create CMakeFiles\\cmTC_c8612.dir\\testCCompiler.c.obj: Invalid argument\x0d
+        Fatal error: can't create CMakeFiles\\cmTC_41488.dir\\testCCompiler.c.obj: Invalid argument\x0d
         ninja: build stopped: subcommand failed.
         
       exitCode: 1

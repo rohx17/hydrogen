@@ -29,16 +29,16 @@ int main(int argc, char* argv[]) {
    std::vector<Token> things=tokenizer.tokenize();
 
    Parser parser(std::move(things));
-   std::optional<NodeExit> tree = parser.parse();
-   if(!tree.has_value()) {
-      std::cerr << "Error parsing tree" << std::endl;
+   std::optional<NodeProg> prog = parser.parse_prog();
+   if(!prog.has_value()) {
+      std::cerr << "Error parsing" << std::endl;
       exit(EXIT_FAILURE);
    }
 
-   Generator generator(tree.value());
+   Generator generator(prog.value());
    {
       std::fstream file("out.asm",std::ios::out);
-      file<<generator.generate();;
+      file<<generator.gen_prog();;
    }
 
    system("nasm -felf64 out.asm");

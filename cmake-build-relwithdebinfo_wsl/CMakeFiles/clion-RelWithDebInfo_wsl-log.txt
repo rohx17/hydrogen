@@ -14,14 +14,14 @@ CMake Error at C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share
 
   It fails with the following output:
 
-    Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-zo5znn'
+    Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-99by20'
     
-    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c8612
-    [1/2] C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_c8612.dir\testCCompiler.c.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-zo5znn\testCCompiler.c
-    FAILED: CMakeFiles/cmTC_c8612.dir/testCCompiler.c.obj 
-    C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_c8612.dir\testCCompiler.c.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-zo5znn\testCCompiler.c
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_41488
+    [1/2] C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_41488.dir\testCCompiler.c.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-99by20\testCCompiler.c
+    FAILED: CMakeFiles/cmTC_41488.dir/testCCompiler.c.obj 
+    C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_41488.dir\testCCompiler.c.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-99by20\testCCompiler.c
     Assembler messages:
-    Fatal error: can't create CMakeFiles\cmTC_c8612.dir\testCCompiler.c.obj: Invalid argument
+    Fatal error: can't create CMakeFiles\cmTC_41488.dir\testCCompiler.c.obj: Invalid argument
     ninja: build stopped: subcommand failed.
     
     
