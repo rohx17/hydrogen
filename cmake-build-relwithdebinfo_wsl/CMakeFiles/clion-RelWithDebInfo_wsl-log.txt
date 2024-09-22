@@ -1,27 +1,26 @@
 "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=RelWithDebInfo "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03 -B \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl
--- The C compiler identification is unknown
 -- The CXX compiler identification is unknown
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - failed
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/gcc.exe
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/gcc.exe - broken
-CMake Error at C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:67 (message):
-  The C compiler
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/g++.exe
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/g++.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:73 (message):
+  The C++ compiler
 
-    "C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/gcc.exe"
+    "C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/g++.exe"
 
   is not able to compile a simple test program.
 
   It fails with the following output:
 
-    Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-99by20'
+    Change Dir: '//wsl.localhost/ubuntu/home/ro/dev/hydrogran_03/cmake-build-relwithdebinfo_wsl/CMakeFiles/CMakeScratch/TryCompile-fublgc'
     
-    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_41488
-    [1/2] C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_41488.dir\testCCompiler.c.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-99by20\testCCompiler.c
-    FAILED: CMakeFiles/cmTC_41488.dir/testCCompiler.c.obj 
-    C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_41488.dir\testCCompiler.c.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-99by20\testCCompiler.c
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/ninja/win/x64/ninja.exe" -v cmTC_8d9bf
+    [1/2] C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE    -o CMakeFiles\cmTC_8d9bf.dir\testCXXCompiler.cxx.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-fublgc\testCXXCompiler.cxx
+    FAILED: CMakeFiles/cmTC_8d9bf.dir/testCXXCompiler.cxx.obj 
+    C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE    -o CMakeFiles\cmTC_8d9bf.dir\testCXXCompiler.cxx.obj -c \\wsl.localhost\ubuntu\home\ro\dev\hydrogran_03\cmake-build-relwithdebinfo_wsl\CMakeFiles\CMakeScratch\TryCompile-fublgc\testCXXCompiler.cxx
     Assembler messages:
-    Fatal error: can't create CMakeFiles\cmTC_41488.dir\testCCompiler.c.obj: Invalid argument
+    Fatal error: can't create CMakeFiles\cmTC_8d9bf.dir\testCXXCompiler.cxx.obj: Invalid argument
     ninja: build stopped: subcommand failed.
     
     

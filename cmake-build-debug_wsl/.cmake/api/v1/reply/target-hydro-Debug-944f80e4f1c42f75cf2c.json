@@ -94,7 +94,8 @@
 			[
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -119,6 +120,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/generation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/arena.h",
 			"sourceGroupIndex" : 1
 		}
 	],

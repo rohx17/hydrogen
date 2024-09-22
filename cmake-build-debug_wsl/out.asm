@@ -8,7 +8,7 @@ _start:
 
     push QWORD [rsp + 0]
 
-    push QWORD [rsp + 18446744073709551608]
+    push QWORD [rsp + 0]
 
     push QWORD [rsp + 0]
 

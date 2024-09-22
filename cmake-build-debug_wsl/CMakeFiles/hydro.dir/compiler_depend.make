@@ -201,6 +201,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
   ../src/generation.h \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/hashtable.h \
@@ -216,6 +218,7 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
   ../src/parser.h \
+  ../src/arena.h \
   ../src/tokenization.h \
   /usr/include/c++/11/optional \
   /usr/include/c++/11/vector \
@@ -240,6 +243,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/optional:
+
+../src/arena.h:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -581,6 +586,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
+/usr/include/c++/11/cassert:
+
 /usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -644,6 +651,8 @@ CMakeFiles/hydro.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/assert.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
